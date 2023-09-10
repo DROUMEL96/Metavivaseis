@@ -1,0 +1,251 @@
+body {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+	background-color: white;
+	font-size: 14px;
+}
+
+#container {
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	text-align: left; /* this overrides the text-align: center on the body element. */
+}
+
+#header {
+	margin: 0 auto;
+	padding: 0 100px;
+	height: 80px;
+	border-bottom: 1px solid grey;
+	background-color: #0969A2;
+}
+
+#footer{
+	/*border-top: 1px solid grey;*/
+	height: 50px;
+	background-color: white /*#0969A2*/;
+	padding: 10px 100px ;
+}
+
+#mainContent {
+	padding: 20px 100px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
+	background-color: white;
+	min-height: 300px;
+	
+}
+
+#logo{
+  float: left;
+  font-size: 24px;
+	height: 50px;
+padding: 20px 0px 10px 0px;
+color: white;
+}
+
+#logo a{
+	text-decoration: none;
+	color: white; 
+}
+
+ul.menu {
+  float: right;
+  height: 80px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #0969A2;
+}
+
+ul.menu li{
+  display: inline;
+  text-align: center;
+}
+
+ul.menu li a{
+ display: inline-block;
+ padding: 30px 10px;
+ font-size: 16px;
+ color: white;
+ text-decoration: none;
+}
+ul.menu li a:hover{
+background-color: #3D9AD1;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	color: #03436A;
+}
+
+td{
+	padding: 0 2px;
+}
+
+table{
+	text-align: left;
+}
+
+ul {
+	text-align: left;
+	list-style-type: none;
+}
+ul li img {
+    vertical-align: middle;
+}
+
+.mytable{
+	margin: 0;
+	border-collapse: collapse; 
+	border: 1px solid grey;
+	background-color: white;
+	table-layout : fixed;
+}
+
+.mytable th {
+	background-color: #03436A;
+	color: white;
+}
+
+.mytable th{
+	border: 1px solid grey;
+	padding: 2px 5px 2px 5px;	
+}
+
+.mytable td{
+	border: 1px solid grey;
+	padding: 2px 5px 2px 5px;	
+	text-align: left;
+}
+
+.form-table{
+	border-collapse: collapse; 
+	border: 0px;
+}
+
+.form-table tr{
+	height: 33px;
+}
+
+.form-table th, .form-table td
+{
+	border: 0px;
+	padding: 4px 3px 4px 3px;
+}
+
+
+.error{
+	color: red;
+}
+
+
+input[type=submit] {
+  background-color: #0969A2;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  margin: 3px 2px;
+  padding: 6px 8px;
+  font-size: 14px;
+}
+
+input[type=submit]:hover {
+  background-color: #3D9AD1;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+input[type=submit]:active{
+transform: translateY(2px);	
+}
+
+input[type=number]{
+	height: 19px;
+	width: 50px;
+}
+
+input[type=text]{
+	height: 19px;
+}
+
+select{
+	height: 25px;
+}
+
+select.form-select{
+	width: 100%;
+}
+
+select.select-time{
+	width: 40px;
+}
+
+tr.grey_bg{
+	background: #D0D0D0;
+}
+
+tr:nth-child(even).alternating{
+	background: #D0D0D0;
+}
+
+
+.class_invisible{
+	display:none;
+}
+
+.class_visible{
+	
+}
+
+.subheader-row{
+	height:200px;	
+	background-color: #03436A;
+	color: white;
+
+}
+
+.subheader{
+	font-weight: bold;
+
+
+	/*writing-mode: vertical-lr;
+	-webkit-writing-mode: sideways-lr;
+	-ms-writing-mode: sideways-lr;
+	text-orientation: mixed;
+	*/
+	
+	transform-origin: 50% 50%;
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate(270deg);
+    
+/*	white-space:nowrap;*/
+}
+
+.subheader p {
+    margin: 15px 5px;
+    display:inline-block;
+}
+.subheader p:before{
+    content:'';
+    width:0;
+	/*
+    padding-top:90%; *//* takes width as reference, + 10% for faking some extra padding */
+
+    display:inline-block;
+    vertical-align:middle;
+}
+
+colgroup {
+  display: table-column-group;
+} 
+
+
+.readonly {
+	background: #D0D0D0;
+}
+
